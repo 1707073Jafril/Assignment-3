@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K center</title>
+
+  <!-- custom css -->
+
+  <link rel="stylesheet" href="css/custom-style.css">
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/5adf98a893.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-style">
+  <header>
+    <section class="d-flex justify-content-between align-items-center mt-4 mb-3 fw-bold">
+      <div class="container ps-5 ms-5">
+        <h2 class="fw-5 fs-2">KS convention center</h2>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav">
+                <li class="nav-item pe-3">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="#">Subscribe</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide/slide-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold" style="color:#f5fcf5">Fun With Your Family and Frends</h5>
+              <p>Meet with your family and firends, have some fun enjoy yourself.</p>
+              <a href="#booking"><button class="common-btn">Book a Reservision</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide/slide-2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold" style="color:#f5fcf5">A Romantic Place for your wedding</h5>
+              <p>A moon light place for you and your better half. Gether with your firends and have fun.</p>
+              <a href="#booking"><button class="common-btn">Book a Reservision</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide/slide-4.png" class="d-block w-100 opacity-4" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold" style="color:#f5fcf5" awsome for couple</h5>
+                <p>Happy moment for couple!</p>
+                <a href="#booking"><button class="common-btn">Book a Reservision</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </header>
+  <main>
+
+    <section>
+      <div class="alert alert-light border-start-5 border-primary alert-dismissible fade show w-25 float-end"
+        role="alert">
+        <strong>Get OFF, dear customer</strong> Get a discunt for the first booking.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <h2 class="fs-1 fw-normal text-center mt-5 mb-3 pt-3">Our Featurs</h2>
+      <p class="text-center">Our Featurs are : </p>
+      <div class="container mt-5 w-100">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-5 border rounded-5 me-3 shadow">
+            <img src="img/svg/parking-svgrepo-com.svg" class="w-50 h-50 mx-auto my-5 d-block" alt="">
+            <p class="text-center fs-4 fw-bold pt-3">Car Parking</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 border rounded-5 me-3 shadow">
+            <img src="img/svg/wifi-svgrepo-com.svg" class="w-50 h-50 mx-auto my-5 d-block" alt="">
+            <p class="text-center fs-4 fw-bold mt-4">Free Wifi</p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 border rounded-5 me-3 shadow">
+            <img src="img/svg/cctv-svgrepo-com.svg" class="w-50 h-50 mx-auto my-5 d-block" alt="">
+            <p class="text-center fs-4 fw-bold mt-4">High Secuirty</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 border rounded-5 me-3 shadow">
+            <img src="img/svg/team-svgrepo-com.svg" class="w-50 h-50 mx-auto my-5 d-block" alt="">
+            <p class="text-center fs-4 fw-bold mt-4">Well trained workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="mt-5 mb-5 container">
+      <h1 class="text-center mb-3 mt-2 fw-bold">Our Package</h1>
+      <div class="row mx-auto">
+        <div class="col-sm-6 col-lg-3 border-0">
+          <div class="card mt-5 border-0 shadow">
+            <div class="card-body pt-5">
+              <h3 class="card-title fs-2 custom-font-color">Wedding basic</h3>
+              <h4 class="fs-2 fw-bold">$300</h4>
+              <p class="card-text">For most businesses event like book fair, craft fair.</p>
+              <ul class="list-group">
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Full space access</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Secuirty facility</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> event support</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Decoration design</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Per day bill</li>
+              </ul>
+              <button class="common-btn w-100 mt-3">
+                <a href="#" class="custom-link">Check Out</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 border-0">
+          <div class="card mt-5 border-0 shadow">
+            <div class="card-body pt-5">
+              <h3 class="card-title fs-2 custom-font-color">Corporate event</h3>
+              <h4 class="fs-2 fw-bold">$700</h4>
+              <p class="card-text">For most businesses event like book fair, craft fair.</p>
+              <ul class="list-group">
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Full space access</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Secuirty facility</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> event support</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Decoration design</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Buffet food</li>
+              </ul>
+              <button class="common-btn w-100 mt-3">
+                <a href="#" class="custom-link">Check Out</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 ">
+          <div class="card shadow bg-primary">
+            <div class="d-flex justify-content-evenly p-1 w-100 border-1 rounded-3 bg-danger text-black">
+              <span class="text-white fw-bold"><i class="fas fa-fire" style="color:yellow"></i> Populer</span>
+            </div>
+            <div class="card-body bg-primary text-white">
+
+              <h3 class="card-title fs-2 custom-font-color pt-5 text-white">Wedding PLUS</h3>
+              <h4 class="fs-2 fw-bold text-white">$800</h4>
+              <p class="card-text text-white">For most businesses event like book fair, craft fair.</p>
+              <ul class="list-group ">
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i> limited
+                  space access</li>
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i> Secuirty
+                  facility</li>
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i> event
+                  support</li>
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i>
+                  Decoration design</li>
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i> Buffet
+                  Food</li>
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i> Permium
+                  Car service</li>
+                <li class="list-group-item border-0 bg-primary text-white"><i class="far fa-check-circle"></i> Per day
+                  bill</li>
+              </ul>
+              <button class="common-btn w-100 mt-3">
+                <a href="#" class="custom-link">Check Out</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 border-0">
+          <div class="card mt-5 border-0 shadow">
+            <div class="card-body pt-5">
+              <h3 class="card-title fs-2 custom-font-color">Bussines Fair</h3>
+              <h4 class="fs-2 fw-bold">$500</h4>
+              <p class="card-text">For most businesses event like book fair, craft fair.</p>
+              <ul class="list-group">
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> limited space access</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Secuirty facility</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> event support</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Decoration design</li>
+                <li class="list-group-item border-0"><i class="far fa-check-circle"></i> Per day bill</li>
+              </ul>
+              <button class="common-btn w-100 mt-3">
+                <a href="#" class="custom-link">Check Out</a></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="container my-5">
+      <h1 class="text-center">Review</h1>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active mt-5">
+            <p class="text-center fs-5"><i> It is just awsome</i></p>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold text"><small>December 2021</small></p>
+              <span>
+                <p class="fw-bold">Mr. Jhankar Mahbub</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="carousel-item mt-5">
+            <p class="text-center fs-5"><i> Good Services!</i></p>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold text"><small>January 2022</small></p>
+              <span>
+                <p class="fw-bold">Mr. Jhankar Mahbub</p>
+                <p><small>Programming Hero</small></p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="container mb-5">
+      <h1 class="text-center">Frequently Asked Questions(FAQ)</h1>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="accordion accordion-flush w-50" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Do you have a reception service?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body ps-5">Yes!</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What funding and support is available to help bring my event to Dublin?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body ps-5">Various government incentives are available to help bring international
+                events to Ireland.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <img src="img/faq-1.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black d-flex justify-content-around py-5">
+    <div>
+      <p class="text-white">© 2022 Md.Jafril Alam || All rights reserved</p>
+    </div>
+    <div id="booking">
+      <p class="text-white fs-3 fw-bold">Join with your smartphone</p>
+      <a href="https://play.google.com/store/apps/details?id=com.booking&hl=en&gl=US"> <img src="img/playstore-1.png"
+          alt=""></a> <br>
+      <a href="https://apps.apple.com/us/app/booking-com-hotels-travel/id367003839"><img src="img/appstore-1.png"
+          alt=""></a>
+    </div>
+  </footer>
+  <!-- js section for bootstrap  -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
